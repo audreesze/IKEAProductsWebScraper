@@ -20,5 +20,3 @@ for p in products:
     print(title,": ", short_description, "Colors: ", sep = "")
 
 url_tools.get_cache_file_name(couch_url)
-
-#adding this comment in the branch
