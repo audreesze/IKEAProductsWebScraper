@@ -18,9 +18,3 @@ for p in products:
     title = p.find("span", class_="productTitle").text
     short_description = p.find("span", class_="productDesp").text
     print(title,": ", short_description, "Colors: ", sep = "")
-
-url_tools.get_cache_file_name(couch_url)
-
-
-# for n in range(0,2):
-#     print(products[n].prettify())
