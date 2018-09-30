@@ -21,6 +21,4 @@ for p in products:
 
 url_tools.get_cache_file_name(couch_url)
 
-
-# for n in range(0,2):
-#     print(products[n].prettify())
+#adding this comment in the branch
