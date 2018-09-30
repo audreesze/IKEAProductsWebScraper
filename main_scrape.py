@@ -11,10 +11,20 @@ samplecouch = "https://www.ikea.com/us/en/catalog/products/S19150508/"
 all_couches_soup = url_tools.get_soup_from_url(couch_url)
 sample_couch_soup = url_tools.get_soup_from_url(samplecouch)
 
-#extracting the data, sample...
-#gets all of the product titles and
+#prints the basic details of the couches to the console
 products = all_couches_soup.findAll("div", class_="threeColumn product ")
-for p in products:
-    title = p.find("span", class_="productTitle").text
-    short_description = p.find("span", class_="productDesp").text
-    print(title,": ", short_description, "Colors: ", sep = "")
+# for p in products:
+#     title = p.find("span", class_="productTitle").text
+#     short_description = p.find("span", class_="productDesp").text
+#     print(title,": ", short_description, "Colors: ", sep = "")
+
+print(p[0].prettify())
+
+#IN COUCHES:
+#Name
+#Details
+#Price
+#Description
+#Image URL
+#Review
+#Article ID
